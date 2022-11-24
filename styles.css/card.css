@@ -1,0 +1,60 @@
+.card {
+    background-color: var(--branco);
+    border: 1px solid var(--preto);
+    display: flex;
+    margin: 2em 1em;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px lightblue;
+}
+
+.card__img {
+    max-width: 30%;
+    border-radius: 10px;
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 1em;
+}
+
+.card__descricao {
+    display: flex;
+    padding: 0.5em;
+}
+
+.descricao__titulo-anime {
+    font-weight: 700;
+    font: 20px;
+    padding: 0.5em;
+}
+
+.descricao__texto {
+    font-size: 14px;
+    padding: 0.5em;
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 40%;
+        align-items: center;
+        margin: 2em auto 4em;
+    }
+
+    .descricao__titulo {
+        padding: 0 0 2em;
+        text-decoration: underline;
+        font-size: 28px;
+    }
+
+    .descricao__titulo-anime {
+        font-size: 20px;
+        padding: 0 0 1em 0;
+    }
+
+    .descricao__texto {
+        font-size: 16px;
+    }
+}

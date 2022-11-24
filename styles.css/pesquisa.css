@@ -1,0 +1,46 @@
+.pesquisa {
+    background-color: var(--preto);
+    color: var(--branco);
+    text-align: center;
+}
+
+.pesquisa__titulo {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 1em;
+}
+
+.pesquisa__animes {
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid var(--branco);
+    color: var(--branco);
+    width: 70%;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+.pesquisa__animes::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+    background-image: url("../img/Pesquisa.svg");
+    background-repeat: no-repeat;
+    background-position: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    .pesquisa__titulo {
+        font-size: 25px;
+    }
+
+    .pesquisa__animes {
+        font-size: 18px;
+    }
+
+    .pesquisa {
+        padding: 1em;
+    }
+}

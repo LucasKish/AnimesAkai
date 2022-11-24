@@ -1,0 +1,180 @@
+.cabecalho-menu__linhas {
+    background-image: url("../img/Menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.container__botao:checked~.container__rotulo>.cabecalho-menu__linhas {
+    background-image: url("../img/Menu Aberto.png");
+}
+
+.container__botao:checked~.container__rotulo {
+    background-color: var(--azul);
+}
+
+.container__rotulo {
+    padding: 1em;
+}
+
+.cabecalho {
+    border: 1px solid var(--preto);
+    background: var(--branco);
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.container__img {
+    padding: 0 0.8em;
+}
+
+.menu__lista-link {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.menu__lista-item {
+    margin: 1em 0;
+}
+
+.menu__lista {
+    display: none;
+    position: absolute;
+    top: 90%;
+    width: 60vw;
+    background-color: var(--azul);
+    padding: 1em;
+    text-decoration: underline;
+}
+
+.container__botao:checked ~ .menu__lista {
+    display: block;
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__img-vila {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 8px 4px 4px var(--preto);
+}
+
+.container__titulo {
+    display: none;
+}
+
+.cabecalho__tablet {
+    display: none;
+}
+
+
+.container__texto {
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+    .cabecalho__tablet {
+        display: block;
+    }
+
+    .container__titulo-logo {
+        color: var(--preto);
+        font-weight: bold;
+        margin-right: 2em;
+    } 
+
+    .container__titulo {
+        font-size: 20px;
+        display: block;
+    }
+
+    .container__titulo--negrito b {
+        font-weight: bold;
+    }
+
+    .cabecalho__tablet {
+        display: flex;
+    }
+
+    .cabecalho__itens {
+        padding: 1em 0.5em;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .cabecalho__link {
+        text-decoration: none;
+        color: var(--preto);
+        font-weight: 500;
+        margin: 0 0.2em 0 0.2em;
+    }
+
+    .cabecalho-menu__linhas {
+        display: none;
+    }
+
+    .container__link {
+        display: block;
+    }
+
+    .cabecalho__itens:hover {
+        background:  wheat;
+    }
+
+    .cabecalho__itens:checked {
+        color: purple;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    
+    .container__texto {
+        display: block;
+    }
+    
+    .container__link {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 0 1em 0 0;
+        color: var(--preto);
+        font-weight: 700;
+    }
+
+    .cabecalho__tablet {
+        margin-right: auto;
+    }
+
+    .cabecalho__itens {
+        margin-left: 2em;
+    }
+
+    
+    .cabecalho__itens:hover {
+        background:  wheat;
+    }
+
+    .cabecalho__itens:checked{
+        color: purple;
+    }
+}
